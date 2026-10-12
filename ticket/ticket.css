@@ -2653,19 +2653,90 @@ input {
 
 
 
-/* Chỉ chỉnh header trên laptop */
-@media (min-width: 1001px) {
-    .navbar .nav-link {
+
+/* CHỈNH HEADER TRÊN LAPTOP */
+@media (min-width: 1201px) {
+    .header-container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .logo img {
+        width: 145px;
+    }
+
+    .navbar {
+        gap: 22px;
+        margin-right: 22px;
+    }
+
+    .nav-link {
         font-size: 13px;
         white-space: nowrap;
     }
 
-    .header {
-        padding-left: 24px;
-        padding-right: 24px;
+    .header-right {
+        gap: 12px;
+    }
+
+    .search-box {
+        width: 200px;
+        height: 42px;
+    }
+
+    .search-box input {
+        font-size: 12px;
+    }
+
+    #notificationBtn {
+        margin-left: 5px;
+    }
+
+    .header-dropdown + .header-dropdown {
+        margin-left: 5px;
+    }
+}
+
+/* Laptop màn hình nhỏ hơn */
+@media (min-width: 851px) and (max-width: 1200px) {
+    .header-container {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .logo img {
+        width: 120px;
     }
 
     .navbar {
-        gap: 16px;
+        gap: 12px;
+        margin-right: 12px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .header-right {
+        gap: 8px;
+    }
+
+    .search-box {
+        width: 150px;
+        height: 38px;
+    }
+
+    .search-box input {
+        font-size: 11px;
+    }
+
+    #notificationBtn {
+        margin-left: 0;
+    }
+
+    .header-dropdown + .header-dropdown {
+        margin-left: 0;
     }
 }
+
