@@ -17,7 +17,7 @@ const memberData = {
         name: "JIN",
         realName: "Kim Seokjin",
         birthDate: "04/12/1992",
-        image: "images/jin.jpg",
+        image: "images/JIN.jpg",
         text: "Jin là thành viên lớn tuổi nhất của BTS, được biết đến với giọng hát giàu cảm xúc cùng tính cách hài hước và ấm áp. Anh thường mang đến nguồn năng lượng vui vẻ cho các thành viên và ARMY. Bên cạnh âm nhạc, Jin còn gây ấn tượng bởi sự chân thành, tinh thần tích cực và cách luôn quan tâm đến những người xung quanh."
     },
 
@@ -25,7 +25,7 @@ const memberData = {
         name: "SUGA",
         realName: "Min Yoongi",
         birthDate: "09/03/1993",
-        image: "images/suga.jpg",
+        image: "images/SUGA.jpg",
         text: "SUGA là rapper, nhạc sĩ và nhà sản xuất âm nhạc của BTS. Anh được biết đến với phong cách âm nhạc chân thật, mạnh mẽ và khả năng truyền tải những câu chuyện cá nhân qua âm nhạc. SUGA cũng tham gia sâu vào quá trình sáng tác và sản xuất, góp phần tạo nên màu sắc đặc trưng trong nhiều sản phẩm của BTS."
     },
 
@@ -41,7 +41,7 @@ const memberData = {
         name: "JIMIN",
         realName: "Park Jimin",
         birthDate: "13/10/1995",
-        image: "images/jimin.jpg",
+        image: "images/JIMIN.jpg",
         text: "Jimin sở hữu chất giọng giàu cảm xúc cùng phong cách biểu diễn tinh tế. Anh nổi bật với khả năng kết hợp giọng hát và vũ đạo để truyền tải cảm xúc trên sân khấu. Jimin cũng được yêu thích bởi sự nhẹ nhàng, chân thành và cách anh luôn dành nhiều tình cảm cho các thành viên cũng như ARMY."
     },
 
@@ -49,7 +49,7 @@ const memberData = {
         name: "V",
         realName: "Kim Taehyung",
         birthDate: "30/12/1995",
-        image: "images/v.jpg",
+        image: "images/V.jpg",
         text: "V được biết đến với màu giọng trầm đặc trưng và phong cách nghệ thuật mang đậm dấu ấn cá nhân. Anh có khả năng thể hiện nhiều màu sắc khác nhau trong âm nhạc và luôn tạo được sự thu hút trên sân khấu. Bên cạnh âm nhạc, V còn thể hiện niềm yêu thích với nghệ thuật, nhiếp ảnh và những lĩnh vực sáng tạo khác."
     },
 
@@ -57,7 +57,7 @@ const memberData = {
         name: "JUNG KOOK",
         realName: "Jeon Jungkook",
         birthDate: "01/09/1997",
-        image: "images/jungkook.jpg",
+        image: "images/JUNGKOOK.jpg",
         text: "Jung Kook là thành viên nhỏ tuổi nhất của BTS, nổi bật với khả năng hát, nhảy và trình diễn đa dạng. Anh được biết đến với giọng hát mạnh mẽ, khả năng làm chủ sân khấu và tinh thần luôn nỗ lực hoàn thiện bản thân. Qua nhiều năm hoạt động, Jung Kook đã phát triển thành một nghệ sĩ đa năng với màu sắc riêng."
     }
 
