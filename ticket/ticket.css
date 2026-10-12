@@ -2649,3 +2649,23 @@ input {
         scroll-snap-stop: always;
     }
 }
+
+
+
+
+/* Chỉ chỉnh header trên laptop */
+@media (min-width: 1001px) {
+    .navbar .nav-link {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .header {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .navbar {
+        gap: 16px;
+    }
+}
