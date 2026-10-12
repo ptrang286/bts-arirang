@@ -1986,3 +1986,632 @@ html {
     background: #9B6BC5;
     box-shadow: 0 0 0 3px rgba(155, 107, 197, 0.2);
 }
+
+
+
+
+
+
+
+
+
+/* =========================================
+   FIX RESPONSIVE - ĐIỆN THOẠI
+   DÁN Ở CUỐI FILE ticket.css
+========================================= */
+
+/* Tránh phần tử làm tràn màn hình */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+img {
+    max-width: 100%;
+}
+
+button,
+input {
+    max-width: 100%;
+}
+
+.section,
+.light-section,
+.media-section,
+.notice-section {
+    min-width: 0;
+}
+
+/* Tablet và điện thoại */
+@media (max-width: 850px) {
+
+    /* HEADER */
+    .header {
+        height: auto;
+    }
+
+    .header-container {
+        width: 100%;
+        height: auto;
+        padding: 12px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .logo {
+        min-width: 0;
+    }
+
+    .logo img {
+        width: 125px;
+        max-width: 100%;
+    }
+
+    .header-right {
+        min-width: 0;
+        gap: 8px;
+        margin-left: auto;
+    }
+
+    .search-box {
+        width: clamp(100px, 27vw, 190px);
+        height: 38px;
+        padding-left: 10px;
+        min-width: 0;
+    }
+
+    .search-box input {
+        min-width: 0;
+        font-size: 12px;
+    }
+
+    .search-box button {
+        width: 32px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+
+    .header-icon {
+        width: 26px;
+        height: 30px;
+        flex-shrink: 0;
+    }
+
+    #notificationBtn {
+        margin-left: 0;
+    }
+
+    .header-dropdown + .header-dropdown {
+        margin-left: 0;
+    }
+
+    .navbar {
+        order: 3;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 5px 0 8px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-link {
+        flex-shrink: 0;
+        padding: 5px 0 10px;
+        font-size: 13px;
+    }
+
+    .nav-link.active::after,
+    .navbar .nav-link::after {
+        bottom: 2px;
+    }
+
+    /* BANNER */
+    .event-hero {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+        border-right: none;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-info-panel {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        padding: 28px 22px;
+        overflow: visible;
+    }
+
+    .hero-title-mobile h1 {
+        font-size: clamp(30px, 8vw, 40px);
+        overflow-wrap: anywhere;
+    }
+
+    .hero-title-mobile h2 {
+        font-size: clamp(15px, 4vw, 20px);
+        overflow-wrap: anywhere;
+    }
+
+    .hero-info-card {
+        min-width: 0;
+    }
+
+    .hero-info-card > div:last-child {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    /* CÁC SECTION */
+    .section {
+        padding: 30px 20px;
+    }
+
+    .light-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-title {
+        gap: 8px;
+    }
+
+    .section-title > div {
+        min-width: 0;
+    }
+
+    .section-title h2 {
+        font-size: clamp(19px, 5vw, 25px);
+        overflow-wrap: anywhere;
+    }
+
+    .title-line {
+        width: clamp(15px, 5vw, 40px);
+        flex-shrink: 0;
+    }
+
+    /* SƠ ĐỒ VÀ GIÁ VÉ */
+    .seating-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .seating-image-box {
+        width: 100%;
+        min-width: 0;
+        padding: 6px;
+    }
+
+    .seating-image-box img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .price-box {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        padding: 15px;
+    }
+
+    .price-item {
+        grid-template-columns: 16px minmax(0, 1fr) auto;
+        gap: 7px;
+    }
+
+    .price-item > :last-child {
+        display: none;
+    }
+
+    .category {
+        font-size: 12px;
+    }
+
+    .price-item strong {
+        font-size: 14px;
+        text-align: right;
+    }
+
+    /* BẢNG BÁN VÉ */
+    .ticket-table-wrapper {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .ticket-table {
+        min-width: 620px;
+    }
+
+    .ticket-table th,
+    .ticket-table td {
+        padding: 10px 12px;
+        white-space: normal;
+    }
+
+    /* ĐIỀU KHOẢN */
+    .information-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .info-card {
+        min-width: 0;
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .info-card h3,
+    .info-card p {
+        overflow-wrap: anywhere;
+    }
+
+    /* LƯU Ý */
+    .notice-section {
+        padding: 28px 18px;
+    }
+
+    .notice-inner {
+        min-width: 0;
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .notice-inner h2 {
+        font-size: 19px;
+        overflow-wrap: anywhere;
+    }
+
+    .notice-inner li {
+        overflow-wrap: anywhere;
+    }
+
+    /* FAQ */
+    .faq-list {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .faq-list summary {
+        padding: 13px 14px;
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .faq-list details p {
+        padding: 0 14px 14px;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    /* CAROUSEL */
+    .carousel-wrapper {
+        gap: 6px;
+        min-width: 0;
+    }
+
+    .cards-window {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .media-cards {
+        gap: 12px;
+    }
+
+    .media-card {
+        flex: 0 0 100%;
+        min-width: 0;
+    }
+
+    .media-card-image {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .carousel-button {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        font-size: 20px;
+    }
+
+    .media-card-content p {
+        min-height: 0;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 30px 20px 18px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 18px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        padding-right: 0;
+    }
+
+    .footer-column {
+        min-width: 0;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-column a,
+    .footer-column p {
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+
+    /* MENU THÔNG BÁO / TÀI KHOẢN / VÉ */
+    .header-dropdown {
+        position: relative;
+    }
+
+    .header-dropdown-menu {
+        width: min(250px, calc(100vw - 24px));
+        right: 0;
+        top: calc(100% + 12px);
+        padding: 16px 12px;
+        font-size: 12px;
+    }
+}
+
+/* ĐIỆN THOẠI NHỎ */
+@media (max-width: 480px) {
+
+    .header-container {
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .header-right {
+        gap: 6px;
+    }
+
+    .search-box {
+        width: clamp(82px, 25vw, 120px);
+        height: 34px;
+        padding-left: 8px;
+    }
+
+    .search-box input {
+        font-size: 11px;
+    }
+
+    .search-box input::placeholder {
+        font-size: 10px;
+    }
+
+    .search-box button {
+        width: 27px;
+        height: 32px;
+    }
+
+    .search-box svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .header-icon {
+        width: 23px;
+        height: 27px;
+    }
+
+    .header-icon svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .navbar {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .hero-info-panel {
+        padding: 24px 16px;
+    }
+
+    .hero-image {
+        aspect-ratio: 4 / 3;
+    }
+
+    .hero-info-card {
+        padding: 10px;
+        gap: 10px;
+        border-radius: 12px;
+    }
+
+    .hero-info-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 17px;
+        border-radius: 10px;
+    }
+
+    .hero-info-card span {
+        font-size: 11px;
+    }
+
+    .hero-info-card strong {
+        font-size: 12px;
+    }
+
+    .section {
+        padding: 26px 14px;
+    }
+
+    .light-section {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .section-title h2 {
+        font-size: 18px;
+    }
+
+    .section-small-title {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .price-box {
+        padding: 12px;
+        border-radius: 13px;
+    }
+
+    .price-box h3 {
+        font-size: 16px;
+    }
+
+    .price-note {
+        font-size: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    .info-number {
+        width: 32px;
+        height: 32px;
+        font-size: 11px;
+    }
+
+    .info-card h3 {
+        font-size: 14px;
+    }
+
+    .info-card p {
+        font-size: 12px;
+    }
+
+    .notice-section {
+        padding: 24px 14px;
+    }
+
+    .notice-inner {
+        padding: 15px;
+    }
+
+    .faq-list summary {
+        font-size: 12px;
+    }
+
+    .carousel-button {
+        width: 25px;
+        height: 25px;
+        font-size: 17px;
+    }
+
+    .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-container {
+        gap: 22px 12px;
+    }
+
+    .footer-brand h3 {
+        font-size: 13px;
+    }
+
+    .footer-brand p {
+        font-size: 12px;
+    }
+}
+
+/* ĐIỆN THOẠI RẤT NHỎ */
+@media (max-width: 360px) {
+
+    .logo img {
+        width: 85px;
+    }
+
+    .header-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .header-right {
+        gap: 4px;
+    }
+
+    .search-box {
+        width: 78px;
+    }
+
+    .search-box input::placeholder {
+        color: transparent;
+    }
+
+    .hero-title-mobile h1 {
+        font-size: 30px;
+    }
+
+    .hero-title-mobile h2 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .price-item {
+        gap: 5px;
+    }
+
+    .price-item strong {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}
