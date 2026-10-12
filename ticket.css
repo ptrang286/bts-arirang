@@ -2830,3 +2830,28 @@ section[id] {
         height: 25px;
     }
 }
+
+
+
+@media (max-width: 850px) {
+    .cards-window {
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .media-cards {
+        display: flex;
+        transform: none !important;
+        transition: none;
+        width: 100%;
+    }
+
+    .media-card {
+        flex: 0 0 100%;
+        min-width: 0;
+        scroll-snap-align: start;
+    }
+}
