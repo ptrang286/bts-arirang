@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS WORLD TOUR 'ARIRANG'</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- ================= HEADER ================= -->
+    <header class="header" >
+        <!-- LOGO -->
+        <div class="logo">
+    <img src="images/logo tách nền.png" alt="BTS World Tour ARIRANG">
+</div>
+
+
+        <!-- MENU -->
+        <nav class="menu">
+            <a href="#home" class="active">
+                Trang chủ
+            </a>
+            <a href="#tour">
+                Lịch trình
+            </a>
+            <a href="#about">
+                Giới thiệu
+            </a>
+        </nav>
+
+
+        <!-- PHẦN BÊN PHẢI -->
+        <div class="header-right">
+
+            <!-- TÌM KIẾM -->
+            <div class="search-box">
+                <input
+                    type="text"
+                    placeholder="Tìm kiếm..."
+                >
+
+                <!-- ICON KÍNH LÚP -->
+                <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="7"
+                    ></circle>
+
+                    <line
+                        x1="16.5"
+                        y1="16.5"
+                        x2="21"
+                        y2="21"
+                    ></line>
+                </svg>
+            </div>
+
+
+                
+<!-- ICON THÔNG BÁO -->
+<div class="notification-wrapper">
+    <button
+        type="button"
+        class="header-icon notification-btn"
+        id="notificationBtn"
+        aria-label="Thông báo"
+        aria-expanded="false">
+
+        <svg width="21" height="21" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+            <path d="M10 21h4"></path>
+        </svg>
+    </button>
+
+    <div class="notification-dropdown" id="notificationDropdown">
+        <p>Chưa có thông báo mới</p>
+    </div>
+</div>
+
+<!-- TÀI KHOẢN -->
+<div class="header-dropdown">
+    <button
+        type="button"
+        class="header-icon dropdown-toggle"
+        id="accountBtn"
+        aria-label="Tài khoản"
+        aria-expanded="false">
+
+        <svg width="21" height="21" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="9" r="3"></circle>
+            <path d="M6.5 19a5.5 5.5 0 0 1 11 0"></path>
+        </svg>
+    </button>
+
+    <div class="header-dropdown-menu account-dropdown" id="accountMenu">
+        <button type="button" class="login-btn" id="loginBtn">
+            Đăng nhập
+        </button>
+    </div>
+</div>
+
+<!-- ICON VÉ -->
+<div class="ticket-wrapper">
+    <button
+        type="button"
+        class="header-icon ticket-btn"
+        id="ticketBtn"
+        aria-label="Vé của tôi"
+        aria-expanded="false">
+
+        <svg width="21" height="21" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4V7z"></path>
+            <line x1="12" y1="7" x2="12" y2="17"></line>
+        </svg>
+    </button>
+
+    <div class="ticket-dropdown" id="ticketDropdown">
+        <p>
+            <strong>Bạn chưa mua vé.</strong><br>
+            Hãy mua vé để tham gia cùng BTS nhé!
+        </p>
+    </div>
+</div>
+</div>
+</header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+
+        <!-- CHỮ TRANG TRÍ BÊN TRÁI -->
+        <div class="hero-decoration">
+            <strong>BTS</strong>
+            <span>7 thành viên</span>
+            <span>1 ước mơ</span>
+            <span>Sự trở lại</span>
+        
+        </div>
+
+
+        <!-- NỘI DUNG CHÍNH -->
+
+        <div class="hero-content">
+            <p class="hero-small-title">
+                BTS WORLD TOUR
+            </p>
+
+            <h1>
+                ‘ARIRANG’
+            </h1>
+
+            <p class="hero-year">
+                CHUYẾN LƯU DIỄN THẾ GIỚI 2026
+            </p>
+
+            <p class="hero-subtitle">
+                Nhiều thành phố &nbsp; · &nbsp;
+                Nhiều khoảnh khắc &nbsp; · &nbsp;
+                Cùng nhau
+            </p>
+
+            <a
+                href="#tour"
+                class="main-button"
+            >
+                KHÁM PHÁ WORLD TOUR
+                <span>→</span>
+            </a>
+        </div>
+
+
+        <!-- KHU VỰC ẢNH BTS -->
+
+<div class="hero-image">
+    <div class="hero-image-placeholder">
+        <img src="images/bts.jpg" alt="BTS World Tour Arirang">
+    </div>
+</div>
+
+    </section>
+
+
+
+  <!-- ================= GIỚI THIỆU BTS ================= -->
+
+<section class="section" id="about">
+
+    <!-- ================= WORLD TOUR ================= -->
+
+    <div class="intro">
+
+        <!-- BÊN TRÁI: GIỚI THIỆU VỀ TOUR -->
+
+        <div class="intro-text">
+
+            <p class="section-label">
+                ✦ &nbsp; GIỚI THIỆU VỀ CHUYẾN LƯU DIỄN THẾ GIỚI
+            </p>
+
+            <h2>
+                "BTS WORLD TOUR ARIRANG"
+            </h2>
+            <p>
+                Sau một khoảng thời gian tạm dừng hoạt động nhóm để các thành viên
+                lần lượt thực hiện nghĩa vụ quân sự, BTS đã chính thức trở lại với
+                đội hình 7 thành viên. Khoảng thời gian xa sân khấu đã trở thành
+                một hành trình đặc biệt, khi mỗi thành viên có cơ hội thực hiện
+                những dự án cá nhân và trưởng thành hơn trên con đường nghệ thuật.
+            </p>
+
+            <p>
+                Năm 2026 đánh dấu sự trở lại của BTS với album mới
+                <strong>ARIRANG</strong> và chuyến lưu diễn thế giới cùng tên.
+                Đây không chỉ là một tour diễn, mà còn là sự tiếp nối hành trình
+                của BTS sau nhiều năm chờ đợi, nơi 7 thành viên một lần nữa cùng
+                đứng trên một sân khấu và gặp lại ARMY trên toàn thế giới.
+            </p>
+
+            <a href="#tour" class="outline-button">
+                XEM LỊCH TRÌNH
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <!-- BÊN PHẢI: HÌNH BTS TOUR -->
+
+        <div class="intro-image">
+
+            <div class="intro-image-placeholder">
+
+                <img
+                    src="images/tour.png"
+                    alt="BTS ARIRANG World Tour"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= 7 THÀNH VIÊN ================= -->
+
+    <div class="members-section">
+
+        <div class="members-heading">
+
+            <p class="section-label">
+                ✦ &nbsp; GIỚI THIỆU VỀ BTS
+            </p>
+
+            <h2>
+                BTS — 7 THÀNH VIÊN
+            </h2>
+
+            <p>
+                BTS (방탄소년단) là nhóm nhạc nam Hàn Quốc gồm 7 thành viên: RM, Jin, SUGA, j-hope, Jimin, V và Jung Kook. Ra mắt năm 2013, BTS đã từng bước vươn lên trở thành một trong những nhóm nhạc có tầm ảnh hưởng lớn trên thế giới. Với âm nhạc đa dạng, những màn trình diễn ấn tượng và thông điệp tích cực, BTS đã kết nối hàng triệu người hâm mộ trên toàn cầu, tạo nên cộng đồng ARMY và ghi dấu ấn sâu sắc trong lịch sử K-pop.
+            </p>
+
+        </div>
+
+
+        <!-- CARD THÀNH VIÊN -->
+
+        <div class="members-grid">
+
+            <!-- RM -->
+            <div class="member-card" onclick="openMember('rm')">
+
+                <div class="member-image">
+                    <img src="imageS/RM.png" alt="RM">
+                </div>
+
+                <h3>RM</h3>
+
+                <span>Xem thông tin →</span>
+
+            </div>
+
+
+            <!-- JIN -->
+            <div class="member-card" onclick="openMember('jin')">
+
+                <div class="member-image">
+                    <img src="images/jin.jpg" alt="JIN">
+                </div>
+
+                <h3>JIN</h3>
+
+                <span>Xem thông tin →</span>
+
+            </div>
+
+
+            <!-- SUGA -->
+            <div class="member-card" onclick="openMember('suga')">
+
+                <div class="member-image">
+                    <img src="images/suga.jpg" alt="SUGA">
+                </div>
+
+                <h3>SUGA</h3>
+
+                <span>Xem thông tin →</span>
+
+            </div>
+
+
+            <!-- J-HOPE -->
+            <div class="member-card" onclick="openMember('jhope')">
+
+                <div class="member-image">
+                    <img src="images/J-HOPE.jpg" alt="J-HOPE">
+                </div>
+
+                <h3>J-HOPE</h3>
+
+                <span>Xem thông tin →</span>
+
+            </div>
+
+
+            <!-- JIMIN -->
+            <div class="member-card" onclick="openMember('jimin')">
+
+                <div class="member-image">
+                    <img src="images/jimin.jpg" alt="JIMIN">
+                </div>
+
+                <h3>JIMIN</h3>
+
+                <span>Xem thông tin →</span>
+
+            </div>
+
+
+            <!-- V -->
+            <div class="member-card" onclick="openMember('v')">
+
+                <div class="member-image">
+                    <img src="images/v.jpg" alt="V">
+                </div>
+
+                <h3>V</h3>
+
+                <span>Xem thông tin →</span>
+
+            </div>
+
+
+            <!-- JUNG KOOK -->
+            <div class="member-card" onclick="openMember('jungkook')">
+
+                <div class="member-image">
+                    <img src="images/jungkook.jpg" alt="JUNG KOOK">
+                </div>
+
+                <h3>JUNG KOOK</h3>
+
+                <span>Xem thông tin →</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= THÔNG TIN THÀNH VIÊN ================= -->
+
+        <div class="member-dropdown" id="memberDropdown">
+
+    <button
+        class="member-close"
+        onclick="closeMember()"
+    >
+        ×
+    </button>
+
+    <div class="member-detail">
+
+        <div class="member-detail-image">
+
+            <img
+                id="memberDetailImage"
+                src=""
+                alt=""
+            >
+
+        </div>
+
+            <div class="member-detail-info">
+
+            <p class="section-label">
+                ✦ &nbsp; BTS MEMBER
+            </p>
+
+            <h2 id="memberDetailName"></h2>
+
+            <p id="memberDetailRealName"></p>
+
+            <p id="memberDetailBirthDate"></p>
+
+            <p id="memberDetailText"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+   <!-- ================= CÁC ĐIỂM DỪNG ================= -->
+
+<section
+    class="tour section"
+    id="tour"
+>
+
+    <!-- TIÊU ĐỀ -->
+
+    <div class="tour-heading">
+        <div>
+            <p class="tour-title">
+                ✦ &nbsp; CÁC ĐIỂM DỪNG TOUR
+            </p>
+
+            <p class="tour-description">
+                Chọn thành phố bạn muốn đến để xem
+                thông tin chi tiết và mua vé.
+            </p>
+        </div>
+
+        <a
+            href="#"
+            class="view-all"
+        >
+            Xem tất cả điểm dừng
+            &nbsp; →
+        </a>
+    </div>
+
+
+    <!-- DANH SÁCH THÀNH PHỐ -->
+
+    <div class="city-grid">
+
+
+        <!-- ================= SEOUL ================= -->
+
+        <div class="city-card">
+
+            <div class="city-image">
+                <img
+                    src="images/seoul.jpg"
+                    alt="SEOUL"
+                >
+            </div>
+
+            <div class="city-info">
+
+                <h3>SEOUL</h3>
+
+                <p>
+                    <span class="small-icon">⌖</span>
+                    Hàn Quốc
+                </p>
+
+                <p>
+                    <span class="small-icon">◷</span>
+                    10/04/2026 - 12/04/2026
+                </p>
+
+                <p class="city-description">
+                    Điểm khởi đầu của ARIRANG WORLD TOUR,
+                    nơi BTS trở lại sân khấu với đội hình
+                    7 thành viên và gặp gỡ ARMY.
+                </p>
+
+                <a
+                    href="ticket/Seoul.html"
+                    class="city-button"
+                >
+                    Xem chi tiết →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= TOKYO ================= -->
+
+        <div class="city-card">
+
+            <div class="city-image">
+                <img
+                    src="images/tokyo.jpg"
+                    alt="TOKYO"
+                >
+            </div>
+
+            <div class="city-info">
+
+                <h3>TOKYO</h3>
+
+                <p>
+                    <span class="small-icon">⌖</span>
+                    Nhật Bản
+                </p>
+
+                <p>
+                    <span class="small-icon">◷</span>
+                    17/04/2026 - 19/04/2026
+                </p>
+
+                <p class="city-description">
+                    Tokyo mang đến những sân khấu sôi động,
+                    nơi BTS tiếp tục hành trình kết nối
+                    với ARMY tại Nhật Bản.
+                </p>
+
+                <a
+                    href="ticket/Tokyo.html"
+                    class="city-button"
+                >
+                    Xem chi tiết →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= BANGKOK ================= -->
+
+        <div class="city-card">
+
+            <div class="city-image">
+                <img
+                    src="images/bangkok.jpg"
+                    alt="BANGKOK"
+                >
+            </div>
+
+            <div class="city-info">
+
+                <h3>BANGKOK</h3>
+
+                <p>
+                    <span class="small-icon">⌖</span>
+                    Thái Lan
+                </p>
+
+                <p>
+                    <span class="small-icon">◷</span>
+                    24/04/2026 - 26/04/2026
+                </p>
+
+                <p class="city-description">
+                    Bangkok là điểm dừng tại Đông Nam Á,
+                    mang đến cơ hội để ARMY cùng hòa mình
+                    vào không khí đặc biệt của ARIRANG.
+                </p>
+
+                <a
+                    href="ticket/Bangkok.html"
+                    class="city-button"
+                >
+                    Xem chi tiết →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= LONDON ================= -->
+
+        <div class="city-card">
+
+            <div class="city-image">
+                <img 
+                    src="images/london.jpg"
+                    alt="LONDON"
+                >
+            </div>
+
+            <div class="city-info">
+
+                <h3>LONDON</h3>
+
+                <p>
+                    <span class="small-icon">⌖</span>
+                    Anh
+                </p>
+
+                <p>
+                    <span class="small-icon">◷</span>
+                    08/05/2026 - 10/05/2026
+                </p>
+
+                <p class="city-description">
+                    London đánh dấu chặng đường của BTS
+                    tại châu Âu với sân khấu quy mô lớn
+                    dành cho ARMY.
+                </p>
+
+                <a
+                    href="ticket/London.html"
+                    class="city-button"
+                >
+                    Xem chi tiết →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= SINGAPORE ================= -->
+
+<div class="city-card">
+
+    <div class="city-image">
+        <img 
+            src="images/singapore.jpg"
+            alt="SINGAPORE"
+        >
+    </div>
+
+    <div class="city-info">
+
+        <h3>SINGAPORE</h3>
+
+        <p>
+            <span class="small-icon">⌖</span>
+            Singapore
+        </p>
+
+        <p>
+            <span class="small-icon">◷</span>
+            01/05/2026 - 03/05/2026
+        </p>
+
+        <p class="city-description">
+            Singapore là một điểm dừng tại Đông Nam Á,
+            mang đến không gian hiện đại và những khoảnh khắc
+            đặc biệt giữa BTS cùng ARMY.
+        </p>
+
+        <a
+            href="ticket/Singapore.html"
+            class="city-button"
+        >
+            Xem chi tiết →
+        </a>
+
+    </div>
+
+</div>
+
+
+
+        <!-- ================= NEW YORK ================= -->
+
+        <div class="city-card">
+
+            <div class="city-image">
+                <img 
+                    src="images/New York.jpg"
+                    alt="NEW YORK"
+                >   
+            </div>
+
+            <div class="city-info">
+
+                <h3>NEW YORK</h3>
+
+                <p>
+                    <span class="small-icon">⌖</span>
+                    Hoa Kỳ
+                </p>
+
+                <p>
+                    <span class="small-icon">◷</span>
+                    22/05/2026 - 24/05/2026
+                </p>
+
+                <p class="city-description">
+                    New York mang đến những màn trình diễn
+                    đặc biệt và những khoảnh khắc đáng nhớ
+                    của BTS cùng ARMY tại Mỹ.
+                </p>
+
+                <a
+                    href="ticket/Newyork.html"
+                    class="city-button"
+                >
+                    Xem chi tiết →
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- CỘT 1: LOGO -->
+        <div class="footer-column footer-brand">
+            <div class="footer-logo">
+            <img src="images/logo tách nền.png" alt="BTS World Tour ARIRANG">
+        </div>
+
+            <p class="footer-slogan">
+            Thông tin về BTS WORLD TOUR 'ARIRANG'
+            </p>
+
+            <p class="footer-description">
+            Cập nhật lịch trình, địa điểm biểu diễn và những thông tin cần biết dành cho ARMY.
+            </p>
+
+            <p class="footer-description">
+                Cùng BTS viết tiếp hành trình ARIRANG,
+                nơi âm nhạc kết nối 7 thành viên và
+                ARMY trên toàn thế giới.
+            </p>
+
+        </div>
+
+
+        <!-- CỘT 2: THÔNG TIN -->
+        <div class="footer-column">
+
+            <h3>THÔNG TIN</h3>
+
+            <a href="#home">Trang chủ</a>
+
+            <a href="#tour">Lịch trình tour</a>
+
+            <a href="#about">7 thành viên BTS</a>
+
+            <a href="#faq">Câu hỏi thường gặp</a>
+
+        </div>
+
+
+        <!-- CỘT 3: WORLD TOUR -->
+        <div class="footer-column">
+
+            <h3>WORLD TOUR</h3>
+
+            <a href="#tour">Seoul</a>
+
+            <a href="#tour">Tokyo</a>
+
+            <a href="#tour">Bangkok</a>
+
+            <a href="#tour">Singapore</a>
+
+            <a href="#tour">London</a>
+
+            <a href="#tour">New York</a>
+
+        </div>
+
+
+        <!-- CỘT 4: MẠNG XÃ HỘI -->
+        <div class="footer-column">
+
+            <h3>MẠNG XÃ HỘI</h3>
+
+            <a 
+            href="https://www.youtube.com/@BTS"
+            target="_blank"
+            >
+            YouTube — BANGTANTV
+            </a>
+
+            <a 
+            href="https://www.instagram.com/bts.bighitofficial/"
+            target="_blank"
+            >
+            Instagram — @bts.bighit
+            </a>
+
+            <a 
+            href="https://www.facebook.com/bangtan.official?locale=vi_VN"
+            target="_blank"
+            >
+            Facebook — BTS
+            </a>
+
+            <a 
+            href="https://x.com/bts_bighit"
+            target="_blank"
+            >
+            X — @BTS_twt
+            </a>
+
+            <a 
+            href="https://www.tiktok.com/@bts_official_bighit"
+            target="_blank"
+            >
+            TikTok — @bts_official_bighit
+            </a>
+
+        </div>
+
+
+        <!-- CỘT 5: LIÊN HỆ -->
+        <div class="footer-column">
+
+            <h3>LIÊN HỆ</h3>
+
+            <p>
+                ✉ Email
+            </p>
+
+            <span>
+                contact@btsarirang.com
+            </span>
+
+            <p class="footer-note">
+                Thông tin website được xây dựng
+                nhằm mục đích giới thiệu BTS
+                và World Tour ARIRANG.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- DÒNG CUỐI -->
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 BTS ARIRANG CONCERT.
+            All Rights Reserved.
+        </span>
+
+        <span>
+            Made with ♡ for ARMY
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

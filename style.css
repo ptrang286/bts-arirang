@@ -1,0 +1,3345 @@
+/* ==================================================
+   BẢNG MÀU WEB - TÍM ARIRANG
+   #E8DDF5 = tím nền sáng
+   #9B6BC5 = tím chủ đạo
+   #5B2A86 = tím đậm / điểm nhấn
+================================================== */
+
+/* ==================================================
+   CÀI ĐẶT CHUNG
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #5B2A86;
+
+    background: #E8DDF5;
+}
+
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+
+/* ==================================================
+   HEADER
+================================================== */
+/* HEADER */
+.header {
+    width: 100%;
+    height: 68px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    border-bottom: 1px solid #D8CBEA;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+/* LOGO HÌNH BTS ARIRANG */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    margin-right: auto;
+
+    width: 150px;
+    height: 55px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+
+/* MENU */
+
+.menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+
+    margin-right: 30px;
+}
+
+
+.menu a {
+
+    position: relative;
+
+    padding: 27px 0;
+
+    font-size: 13px;
+
+    color: #5B2A86;
+
+    transition: 0.2s;
+}
+
+
+.menu a:hover {
+
+    color: #5B2A86;
+}
+
+
+.menu a.active {
+
+    color: #5B2A86;
+
+    font-weight: 600;
+}
+
+
+.menu a {
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 17px;
+    height: 2px;
+    border-radius: 5px;
+    background: #5B2A86;
+
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.menu a.active::after {
+    transform: scaleX(1);
+}
+
+
+
+/* HEADER BÊN PHẢI */
+
+.header-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+
+
+/* SEARCH */
+
+.search-box {
+
+    width: 180px;
+
+    height: 36px;
+
+    border: 1px solid #CDBCE2;
+
+    background: #F8F3FB;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 12px;
+
+    color: #5B2A86;
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 11px;
+
+    color: #5B2A86;
+}
+
+
+.search-box input::placeholder {
+
+    color: #9B6BC5;
+}
+
+
+.search-box svg {
+
+    flex-shrink: 0;
+}
+
+
+
+/* ICON HEADER */
+
+.header-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #5B2A86;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    transition: 0.2s;
+}
+
+
+.header-icon:hover {
+
+    background: #E8DDF5;
+
+    color: #421D63;
+}
+
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+
+    min-height: 390px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 45px 7%;
+    background:
+
+        radial-gradient(
+            circle at 72% 45%,
+            #D0B8E8 0%,
+            #E4D7F2 28%,
+            #E8DDF5 58%,
+            #E8DDF5 100%
+        );
+}
+
+
+
+/* CHỮ TRANG TRÍ */
+
+.hero-decoration {
+    position: absolute;
+    left: 3%;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 1.5;
+    color: #9B6BC5;
+    opacity: 0.75;
+}
+
+.hero-decoration strong {
+    font-size: 34px;
+    margin-top: 2px;
+}
+
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    width: 58%;
+    text-align: center;
+    margin-left: 0;
+    position: relative;
+    left: -100px;
+    z-index: 2;
+}
+
+
+.hero-small-title {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #5B2A86;
+}
+
+
+.hero h1 {
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 70px;
+    line-height: 0.95;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #5B2A86;
+    margin: 6px 0 10px;
+}
+
+
+.hero-year {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: #7E55A6;
+}
+
+
+.hero-subtitle {
+    margin-top: 18px;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #75509A;
+}
+
+
+
+/* NÚT */
+
+.main-button {
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    background: #9B6BC5;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+
+.main-button:hover {
+    background:#5B2A86;
+    transform: translateY(-2px);
+}
+
+
+
+/* ẢNH HERO */
+
+.hero-image {
+    position: absolute;
+    right: 2%;
+    bottom: 0;
+    width: 55%;
+    height: 420px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.hero-image-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.hero-image-placeholder img {
+    width: 105%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+    display: block;
+    margin-left: -2%;
+}
+
+
+
+
+/* ==================================================
+   SECTION CHUNG
+================================================== */
+
+.section {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 30px;
+}
+
+
+.section-label {
+
+    color: #9B6BC5;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+}
+
+
+
+/* ==================================================
+   INTRO
+================================================== */
+
+.intro {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 65px;
+}
+
+
+.intro h2 {
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #5B2A86;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+
+.intro-text > p:not(.section-label) {
+
+    color: #5f188e;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+}
+
+
+
+/* NÚT VIỀN */
+
+.outline-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px 21px;
+    border: 1px solid #9B6BC5;
+    border-radius: 22px;
+    color: #5B2A86;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+
+.outline-button:hover {
+    background: #9B6BC5;
+    color: white;
+}
+
+
+
+/* ================= ẢNH GIỚI THIỆU WORLD TOUR ================= */
+
+.intro-image {
+    width: 110%;
+    height: auto;
+    margin-right: -10%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.intro-image-placeholder {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.intro-image-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+
+
+/* ==================================================
+   TOUR
+================================================== */
+
+.tour {
+    padding-top: 15px;
+    padding-bottom: 65px;
+}
+
+
+.tour-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+
+.tour-title {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #5B2A86;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+
+.tour-description {
+    color: #756D82;
+    font-size: 12px;
+}
+
+
+.view-all {
+    color: #7465A9;
+    font-size: 11px;
+    transition: 0.2s;
+}
+
+
+.view-all:hover {
+    color: #421D63;
+}
+
+
+
+/* ==================================================
+   CITY GRID
+================================================== */
+
+.city-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.city-card {
+    min-height: 140px;
+    height: 180px;
+    
+    display: grid;
+    grid-template-columns: 42% 58%;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #DCD0E9;
+    border-radius: 12px;
+    box-shadow:
+        0 5px 20px rgba(81,69,111,0.06);
+    transition: 0.25s;
+}
+
+
+.city-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 12px 28px rgba(81,69,111,0.12);
+}
+
+
+
+/* KHUNG ẢNH */
+
+.city-image {
+    min-height: 140px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.city-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+/* CITY INFO */
+
+.city-info {
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.city-info h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #5B2A86;
+    margin-bottom: 12px;
+}
+
+
+.city-info p {
+
+    color: #6F607B;
+    font-size: 10px;
+    margin-bottom: 7px;
+}
+
+
+.small-icon {
+    color: #8B5FB0;
+    margin-right: 3px;
+}
+
+
+/* NÚT CITY */
+
+.city-button {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 6px;
+    padding: 7px 13px;
+    background: #9B6BC5;
+    color: white;
+    border-radius: 20px;
+    font-size: 9px;
+    transition: 0.2s;
+}
+
+
+.city-button:hover {
+    background: #5B2A86;
+}
+
+
+
+/* ==================================================
+   THÔNG TIN CHUNG
+================================================== */
+
+.information {
+
+    max-width: 1040px;
+
+    margin: 0 auto 40px;
+
+    padding: 22px 28px;
+
+    border-radius: 11px;
+
+    background: #E1D5EE;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1.4fr 1.4fr;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.information-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.information-icon {
+
+    color: #7E55A6;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.information-title h3 {
+
+    color: #5B2A86;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+.information-title p {
+
+    color: #6F607B;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+}
+
+
+.information-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #5B2A86;
+
+    font-size: 10px;
+
+    transition: 0.2s;
+}
+
+
+.information-link > span:last-child {
+
+    margin-left: auto;
+}
+
+
+.information-link:hover {
+
+    color: #9B6BC5;
+}
+
+
+.info-link-icon {
+
+    color: #7E55A6;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+
+/* ==================================================
+   FAQ
+================================================== */
+
+.faq-section {
+
+    min-height: 1px;
+}
+
+
+
+
+
+
+
+/* LOGO - chữ mảnh hơn */
+.logo {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #5B2A86;
+    font-weight: 600;
+}
+
+.logo b {
+    color: #9B6BC5;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+
+
+
+/* ==================================================
+   CHỈNH LẠI CỠ CHỮ + KHOẢNG TRỐNG
+   Phiên bản cân đối hơn
+================================================== */
+
+body {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    height: 68px;
+    padding: 0 5.5%;
+}
+
+.logo {
+    font-size: 21px;
+}
+
+.menu {
+    gap: 28px;
+    margin-right: 24px;
+}
+
+.menu a {
+    font-size: 14px;
+    padding: 25px 0;
+}
+
+/* HERO */
+/* HERO */
+.hero {
+    margin-top: 68px;
+    min-height: 430px;
+    padding: 48px 6.5%;
+}
+
+.hero-content {
+    width: 54%;
+    margin-left: 4%;
+}
+
+.hero-small-title {
+    font-size: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 8px 0 12px;
+}
+
+.hero-year {
+    font-size: 15px;
+}
+
+.hero-subtitle {
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.main-button {
+    font-size: 12px;
+    padding: 12px 23px;
+    margin-top: 20px;
+}
+
+.hero-decoration {
+    font-size: 16px;
+}
+
+/* SECTION CHUNG */
+.section {
+    max-width: 1120px;
+    padding: 58px 28px;
+}
+
+/* GIỚI THIỆU */
+.intro {
+    gap: 50px;
+}
+
+.section-label {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+
+.intro-text > p:not(.section-label) {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.outline-button {
+    font-size: 12px;
+    padding: 9px 19px;
+}
+
+/* TOUR */
+.tour {
+    padding-top: 8px;
+    padding-bottom: 52px;
+}
+
+.tour-heading {
+    margin-bottom: 20px;
+}
+
+.tour-title {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.tour-description {
+    font-size: 13px;
+}
+
+.view-all {
+    font-size: 12px;
+}
+
+/* CITY CARDS */
+.city-grid {
+    gap: 16px;
+}
+
+.city-card {
+    min-height: 152px;
+    grid-template-columns: 40% 60%;
+}
+
+.city-image {
+    min-height: 152px;
+    font-size: 17px;
+}
+
+.city-info {
+    padding: 15px 14px;
+}
+
+.city-info h3 {
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+.city-info p {
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.city-button {
+    font-size: 10px;
+    padding: 7px 12px;
+    margin-top: 5px;
+}
+
+/* THÔNG TIN CHUNG */
+.information {
+    max-width: 1080px;
+    margin: 0 auto 32px;
+    padding: 20px 25px;
+    gap: 18px;
+}
+
+.information-title {
+    gap: 12px;
+}
+
+.information-title h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.information-title p {
+    font-size: 10px;
+    line-height: 1.45;
+}
+
+.information-link {
+    font-size: 11px;
+}
+
+
+
+.contact-grid {
+    gap: 8px 20px;
+}
+
+.contact-item {
+    min-height: 46px;
+    padding: 7px 12px;
+}
+
+.app-info strong {
+    font-size: 11px;
+}
+
+.app-info span {
+    font-size: 10px;
+}
+
+.copyright {
+    font-size: 8px;
+    margin-top: 15px;
+}
+
+/* Giảm khoảng trống không cần thiết ở cuối FAQ */
+.faq-section {
+    min-height: 0;
+}
+
+/* Màn hình nhỏ */
+@media (max-width: 900px) {
+    .menu {
+        gap: 18px;
+    }
+
+    .hero-content {
+        width: 58%;
+        margin-left: 0;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+    .city-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .information {
+        grid-template-columns: 1.7fr 1fr 1.3fr;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+
+    .search-box {
+        width: 140px;
+    }
+
+    .hero {
+        min-height: 480px;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hero-image {
+        opacity: 0.25;
+        width: 100%;
+    }
+
+    .city-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .information {
+        grid-template-columns: 1fr 1fr;
+    }
+
+  
+}
+
+
+/* ==================================================
+   TYPOGRAPHY FINAL — ĐỒNG BỘ VỚI PHẦN GIỚI THIỆU
+   Cỡ chữ chuẩn nội dung: 14px
+================================================== */
+
+/* Các thông tin ngày/địa điểm trong card */
+.city-info p {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 8px;
+}
+
+.city-info h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.city-button {
+    font-size: 12px;
+    padding: 8px 14px;
+}
+
+/* Thông tin chung */
+.information-title h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.information-title p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.information-link {
+    font-size: 14px;
+    gap: 9px;
+}
+
+
+
+
+
+.notification-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-dropdown {
+    display: none;
+
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 50%;
+    transform: translateX(50%);
+
+    width: 250px;
+    height: 300px;
+
+    background: #F8F3FC;
+    border: 1px solid #DCD0E9;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(81, 69, 111, 0.12);
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+.notification-dropdown p {
+    margin: 0;
+    color: #75509A;
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
+
+.notification-dropdown.show {
+    display: flex;
+}
+
+.ticket-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.ticket-dropdown {
+    display: none;
+
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 50%;
+    transform: translateX(30%);
+
+    width: 250px;
+    height: 300px;
+
+    background: #F8F3FC;
+    border: 1px solid #DCD0E9;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(81, 69, 111, 0.12);
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+.ticket-dropdown p {
+    margin: 0;
+    text-align: center;
+    color: #75509A;
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
+
+.ticket-dropdown.show {
+    display: flex;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* ================= CĂN ĐỀU TOÀN BỘ PHẦN GIỚI THIỆU ================= */
+
+#about p,
+#about .member-card p {
+    text-align: justify;
+}
+
+/* ================= CITY CARD XẾP DỌC ================= */
+
+.city-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.city-card {
+    width: 100%;
+    height: 220px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #DCD0E9;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(81,69,111,0.06);
+    transition: 0.25s;
+}
+
+.city-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(81,69,111,0.12);
+}
+
+
+/* HÌNH */
+
+.city-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.city-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+/* PHẦN THÔNG TIN */
+
+.city-info {
+    padding: 18px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.city-info h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    color: #5B2A86;
+    margin-bottom: 8px;
+}
+
+.city-info p {
+    color: #6F607B;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+
+/* MÔ TẢ */
+
+.city-info .city-description {
+    color: #756D82;
+    font-size: 13px;
+    line-height: 1.55;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    max-width: 95%;
+    text-align: justify;
+}
+
+
+/* NÚT */
+
+.city-button {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 3px;
+    padding: 7px 13px;
+    background: #9B6BC5;
+    color: white;
+    border-radius: 20px;
+    font-size: 11px;
+    transition: 0.2s;
+}
+
+.city-button:hover {
+    background: #5B2A86;
+}
+
+.hero-decoration,
+.hero-year,
+.hero-subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+/* ==================================================
+   7 THÀNH VIÊN BTS
+================================================== */
+
+.members-section {
+    margin-top: 75px;
+}
+
+
+/* TIÊU ĐỀ */
+
+.members-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.members-heading .section-label {
+    margin-bottom: 8px;
+}
+
+.members-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #5B2A86;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.members-heading > p:last-child {
+    color: #5B2A86;
+    font-size: 15px;
+}
+
+
+/* ================= CARD ================= */
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    justify-items: center;
+}
+
+.members-grid .member-card:nth-child(5) {
+    grid-column: 1;
+    transform: translateX(50%);
+}
+
+.members-grid .member-card:nth-child(6) {
+    grid-column: 2;
+    transform: translateX(50%);
+}
+
+.members-grid .member-card:nth-child(7) {
+    grid-column: 3;
+    transform: translateX(50%);
+}
+
+
+/* CARD */
+
+.member-card {
+    background: #FFFFFF;
+    border: 1px solid #DCD0E9;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px rgba(81, 69, 111, 0.06);
+
+    transition: 0.25s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 28px rgba(81, 69, 111, 0.14);
+}
+
+
+/* HÌNH THÀNH VIÊN */
+
+.member-image {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.member-card img {
+    width: 100%;
+    height: 315px; /* giữ chiều cao khung hiện tại của m */
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.member-card:hover .member-image img {
+    transform: scale(1.04);
+}
+
+
+/* TÊN */
+
+.member-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #5B2A86;
+
+    font-size: 19px;
+
+    margin: 13px 0 5px;
+}
+
+
+/* CHỮ XEM THÔNG TIN */
+
+.member-card span {
+    display: block;
+
+    color: #9B6BC5;
+
+    font-size: 11px;
+
+    padding-bottom: 15px;
+
+    transition: 0.2s;
+}
+
+.member-card:hover span {
+    color: #5B2A86;
+}
+
+
+/* ==================================================
+   Ô THÔNG TIN CHI TIẾT THÀNH VIÊN
+================================================== */
+
+.member-dropdown {
+    display: none;
+
+    width: 100%;
+    margin-top: 30px;
+
+    position: relative;
+
+    background: #F8F3FC;
+
+    border: 1px solid #DCD0E9;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(81, 69, 111, 0.12);
+
+    padding: 25px 30px;
+}
+
+.member-dropdown.show {
+    display: block;
+}
+
+
+/* NÚT ĐÓNG */
+
+.member-close {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: #5B2A86;
+
+    font-size: 24px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.member-close:hover {
+    background: #E8DDF5;
+}
+
+
+/* BỐ CỤC HÌNH + THÔNG TIN */
+
+.member-detail {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* HÌNH */
+
+.member-detail-image {
+    width: 260px;
+    height: 300px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.member-detail-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+
+    display: block;
+}
+
+
+/* PHẦN CHỮ */
+
+.member-detail-info {
+    padding-right: 30px;
+}
+
+.member-detail-info .section-label {
+    margin-bottom: 8px;
+}
+
+.member-detail-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #5B2A86;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.member-detail-info p {
+    color: #8e50c0;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.member-detail-info #memberDetailText {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 900px) {
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .member-image {
+        height: 190px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .member-image {
+        height: 180px;
+    }
+
+
+}
+
+
+
+/* ==================================================
+   FOOTER BTS ARIRANG
+================================================== */
+
+.footer {
+    width: 100%;
+
+    background: #5B2A86;
+
+    color: white;
+
+    padding: 45px 6% 18px;
+
+    margin-top: 50px;
+}
+
+
+/* ================= KHUNG CHÍNH ================= */
+
+.footer-container {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1.5fr
+        1.2fr;
+
+    gap: 45px;
+
+    align-items: start;
+}
+
+
+/* ================= CÁC CỘT ================= */
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+/* ================= LOGO HÌNH BTS ARIRANG ================= */
+
+.footer-brand {
+    padding-right: 15px;
+}
+
+.footer-logo {
+    width: 300px;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -20px;
+    margin-bottom: 8px;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+.footer-slogan {
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #E8DDF5;
+
+    margin-bottom: 12px;
+}
+
+
+.footer-description {
+
+    color: #E8DDF5;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    max-width: 240px;
+
+    text-align: left;
+}
+
+
+/* ================= TIÊU ĐỀ CỘT ================= */
+
+.footer-column h3 {
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ================= LINK ================= */
+
+.footer-column a {
+
+    color: #E8DDF5;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    transition: 0.2s;
+}
+
+
+.footer-column a:hover {
+
+    color: white;
+
+    transform: translateX(3px);
+}
+
+
+/* ================= LIÊN HỆ ================= */
+
+.footer-column p {
+
+    color: #E8DDF5;
+
+    font-size: 12px;
+
+    margin: 0;
+}
+
+
+.footer-column > span {
+
+    color: #E8DDF5;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+.footer-note {
+
+    margin-top: 8px !important;
+
+    line-height: 1.6;
+
+    opacity: 0.85;
+}
+
+
+/* ================= DÒNG CUỐI ================= */
+
+.footer-bottom {
+
+    max-width: 1200px;
+
+    margin: 30px auto 0;
+
+    padding-top: 15px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.25);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #E0D2EA;
+
+    font-size: 9px;
+}
+
+/* ================= THÔNG TIN FOOTER ================= */
+
+.footer-slogan {
+    margin: 0 0 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: white;
+
+    text-align: center;
+}
+
+.footer-description {
+    margin: 0 0 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+    line-height: 1.6;
+
+    color: #E8DDF5;
+
+    text-align: center;
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1000px) {
+
+    .footer-container {
+
+        grid-template-columns:
+            1.5fr
+            1fr
+            1fr;
+
+        gap: 30px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .footer {
+
+        padding: 35px 7% 15px;
+    }
+
+
+    .footer-container {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 30px 20px;
+    }
+
+
+    .footer-brand {
+
+        grid-column: 1 / -1;
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        gap: 7px;
+
+        text-align: center;
+    }
+
+}
+
+
+
+/* ==================================================
+   RESPONSIVE BTS ARIRANG
+   IPAD, MÁY TÍNH BẢNG VÀ ĐIỆN THOẠI
+================================================== */
+
+/* ================= IPAD / TABLET ================= */
+@media screen and (max-width: 1024px) {
+
+    /* HEADER */
+    .header {
+        padding: 0 3%;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 115px;
+        flex-shrink: 0;
+    }
+
+    .menu {
+        gap: 14px;
+        margin-right: 8px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .header-right {
+        gap: 6px;
+    }
+
+    .search-box {
+        width: 130px;
+    }
+
+    /* BANNER */
+    .hero {
+        min-height: 390px;
+        padding: 35px 4%;
+    }
+
+    .hero-content {
+        width: 58%;
+        left: 0;
+        margin-left: 0;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero-small-title {
+        font-size: 17px;
+    }
+
+    .hero-decoration {
+        left: 2%;
+        top: 25px;
+        font-size: 14px;
+    }
+
+    .hero-decoration strong {
+        font-size: 25px;
+    }
+
+    .hero-image {
+        width: 50%;
+        height: 350px;
+        right: 0;
+    }
+
+    /* PHẦN GIỚI THIỆU */
+    .section {
+        padding: 45px 25px;
+    }
+
+    .intro {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .intro h2 {
+        font-size: 29px;
+    }
+
+    .intro-image {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .intro-text > p:not(.section-label) {
+        font-size: 14px;
+    }
+
+    /* THẺ THÀNH PHỐ */
+    .city-card {
+        height: auto;
+        min-height: 180px;
+        grid-template-columns: 38% 62%;
+    }
+
+    .city-info {
+        padding: 14px;
+    }
+
+    .city-info h3 {
+        font-size: 18px;
+    }
+
+    .city-info p,
+    .city-info .city-description {
+        font-size: 12px;
+    }
+
+    /* THÔNG TIN CHUNG */
+    .information {
+        width: calc(100% - 40px);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        padding: 22px;
+    }
+
+    /* THÀNH VIÊN BTS */
+    .members-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .members-grid .member-card:nth-child(n) {
+        grid-column: auto;
+        transform: none;
+    }
+
+    .member-detail {
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .member-detail-image {
+        width: 100%;
+    }
+
+    .member-detail-info {
+        padding-right: 0;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        max-width: 230px;
+        height: 85px;
+        margin-left: 0;
+    }
+}
+
+
+/* ================= ĐIỆN THOẠI ================= */
+@media screen and (max-width: 650px) {
+
+    /* HEADER */
+    .header {
+        height: auto;
+        min-height: 65px;
+        padding: 10px 4%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 42px;
+    }
+
+    .menu {
+        display: flex;
+        order: 3;
+        width: 100%;
+        margin: 0;
+        padding: 5px 0 2px;
+        justify-content: flex-start;
+        gap: 0;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .menu a {
+        flex-shrink: 0;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .menu a.active::after {
+        bottom: 2px;
+        left: 12px;
+        right: 12px;
+    }
+
+    .header-right {
+        gap: 4px;
+    }
+
+    .search-box {
+        width: 115px;
+        height: 32px;
+        padding: 0 9px;
+    }
+
+    .search-box input {
+        font-size: 10px;
+    }
+
+    .header-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .notification-dropdown,
+    .ticket-dropdown {
+        width: min(250px, 85vw);
+        height: 220px;
+    }
+
+    /* BANNER */
+    .hero {
+        min-height: 420px;
+        padding: 35px 5%;
+        justify-content: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        left: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .hero-small-title {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 10vw, 48px);
+        letter-spacing: 1px;
+    }
+
+    .hero-year {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .hero-decoration {
+        left: 4%;
+        top: 12px;
+        font-size: 11px;
+    }
+
+    .hero-decoration strong {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        opacity: 0.18;
+        pointer-events: none;
+    }
+
+    .hero-image-placeholder img {
+        width: 100%;
+        margin-left: 0;
+        object-fit: contain;
+    }
+
+    .main-button {
+        font-size: 11px;
+        padding: 11px 20px;
+    }
+
+    /* CÁC SECTION */
+    .section {
+        width: 100%;
+        padding: 38px 18px;
+    }
+
+    .section-label {
+        font-size: 12px;
+    }
+
+    /* GIỚI THIỆU TOUR */
+    .intro {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .intro h2 {
+        font-size: 28px;
+        line-height: 1.25;
+    }
+
+    .intro-text > p:not(.section-label) {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .intro-image {
+        width: 100%;
+        margin: 0;
+    }
+
+    .intro-image-placeholder {
+        width: 100%;
+    }
+
+    /* DANH SÁCH TOUR */
+    .tour {
+        padding-top: 10px;
+        padding-bottom: 35px;
+    }
+
+    .tour-heading {
+        align-items: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .tour-title {
+        font-size: 21px;
+    }
+
+    .tour-description {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .view-all {
+        font-size: 12px;
+    }
+
+    .city-grid {
+        gap: 18px;
+    }
+
+    .city-card {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        height: auto;
+        min-height: 0;
+    }
+
+    .city-image {
+        height: 190px;
+        min-height: 0;
+    }
+
+    .city-info {
+        padding: 15px 16px 18px;
+        gap: 5px;
+    }
+
+    .city-info h3 {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .city-info p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 3px;
+    }
+
+    .city-info .city-description {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .city-button {
+        font-size: 12px;
+        padding: 9px 15px;
+        margin-top: 5px;
+    }
+
+    /* THÔNG TIN CHUNG */
+    .information {
+        width: calc(100% - 32px);
+        margin: 0 auto 25px;
+        padding: 20px 16px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .information-title {
+        gap: 12px;
+    }
+
+    .information-title h3 {
+        font-size: 15px;
+    }
+
+    .information-title p,
+    .information-link {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* 7 THÀNH VIÊN BTS */
+    .members-section {
+        margin-top: 35px;
+    }
+
+    .members-heading {
+        margin-bottom: 22px;
+    }
+
+    .members-heading h2 {
+        font-size: 26px;
+    }
+
+    .members-heading > p:last-child {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .members-grid .member-card:nth-child(n) {
+        grid-column: auto;
+        transform: none;
+    }
+
+    .member-image {
+        height: 150px;
+    }
+
+    .member-card img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .member-card h3 {
+        font-size: 16px;
+        margin: 10px 0 5px;
+    }
+
+    .member-card span {
+        font-size: 10px;
+        padding-bottom: 12px;
+    }
+
+    /* CHI TIẾT THÀNH VIÊN */
+    .member-dropdown {
+        margin-top: 20px;
+        padding: 22px 16px;
+    }
+
+    .member-detail {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .member-detail-image {
+        width: 100%;
+        max-width: 260px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .member-detail-info h2 {
+        font-size: 27px;
+    }
+
+    .member-detail-info p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 30px 5% 15px;
+        margin-top: 30px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 16px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        padding-right: 0;
+    }
+
+    .footer-logo {
+        width: 100%;
+        max-width: 230px;
+        height: 80px;
+        margin: 0 auto 8px;
+        justify-content: center;
+    }
+
+    .footer-slogan {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .footer-description {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .footer-column h3 {
+        font-size: 13px;
+    }
+
+    .footer-column a,
+    .footer-column p {
+        font-size: 11px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-column > span {
+        font-size: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        line-height: 1.6;
+    }
+}
+
+
+/* ================= ĐIỆN THOẠI RẤT NHỎ ================= */
+@media screen and (max-width: 380px) {
+
+    .search-box {
+        width: 95px;
+    }
+
+    .header-right {
+        gap: 2px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .city-image {
+        height: 160px;
+    }
+
+    .members-grid {
+        gap: 8px;
+    }
+
+    .member-image {
+        height: 130px;
+    }
+
+    .footer-container {
+        gap: 22px 12px;
+    }
+}
+
+
+/* Hai ô thông báo trên header */
+.notification-dropdown,
+.ticket-dropdown {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 10px;
+
+    width: 240px;
+    height: 300px;
+
+    background: #FFFFFF;
+    border: 1px solid #E8DDF5;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(91, 42, 134, 0.12);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* Chỉ hiện ô khi được bật */
+.notification-dropdown.show,
+.ticket-dropdown.show {
+    display: flex;
+}
+
+/* Chữ ở giữa ô */
+.notification-dropdown p,
+.ticket-dropdown p {
+    margin: 0;
+    padding: 0;
+
+    color: #6B3298;
+    font-size: 13px;
+    white-space: nowrap;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Làm mốc định vị cho từng ô */
+.notification-wrapper,
+.ticket-wrapper {
+    position: relative;
+}
+
+/* Ô thông báo */
+.notification-dropdown {
+    right: 15px;
+}
+
+/* Ô vé */
+.ticket-dropdown {
+    right: 10px;
+}
+
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .notification-dropdown,
+    .ticket-dropdown {
+        width: 260px;
+        height: 250px;
+        right: 0;
+        padding: 18px;
+    }
+
+    .notification-dropdown p,
+    .ticket-dropdown p {
+        font-size: 13px;
+        line-height: 1.6;
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+/* ĐIỆN THOẠI */
+@media (max-width: 600px) {
+    .notification-dropdown,
+    .ticket-dropdown {
+        width: min(260px, calc(100vw - 30px));
+        height: 180px;
+        top: calc(100% + 8px);
+        right: -10px;
+        padding: 12px;
+        border-radius: 14px;
+    }
+
+    .notification-dropdown p,
+    .ticket-dropdown p {
+        font-size: 12px;
+        line-height: 1.6;
+        white-space: normal;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* ĐIỆN THOẠI RẤT NHỎ */
+@media (max-width: 360px) {
+    .notification-dropdown,
+    .ticket-dropdown {
+        width: calc(100vw - 24px);
+        right: -8px;
+        height: 160px;
+        padding: 10px;
+    }
+
+    .notification-dropdown p,
+    .ticket-dropdown p {
+        font-size: 11px;
+    }
+}
+
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/* HỘP DROPDOWN TÀI KHOẢN */
+.header-dropdown {
+    position: relative;
+}
+
+.header-dropdown-menu.account-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+
+    width: 220px;
+    padding: 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #DCD0E9;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(91, 42, 134, 0.15);
+
+    z-index: 2000;
+    box-sizing: border-box;
+}
+
+/* Chỉ hiện hộp khi bấm icon */
+.header-dropdown-menu.account-dropdown.show {
+    display: block;
+}
+
+/* NÚT ĐĂNG NHẬP NẰM BÊN TRONG HỘP */
+.account-dropdown .login-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+
+    border: none;
+    border-radius: 8px;
+    background: #9B6BC5;
+    color: #FFFFFF;
+
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.account-dropdown .login-btn:hover {
+    background: #5B2A86;
+}
+
+
+
+/* ==================================================
+   RESPONSIVE FIX CUỐI CÙNG — BTS ARIRANG
+   Đặt ở CUỐI FILE style.css
+================================================== */
+
+/* Chống tràn ngang */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section,
+.intro,
+.intro-text,
+.intro-image,
+.city-card,
+.city-info,
+.member-card,
+.member-dropdown,
+.footer-column {
+    min-width: 0;
+}
+
+/* HEADER — MÁY TÍNH */
+.header {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hero {
+    margin-top: 68px;
+    scroll-margin-top: 80px;
+}
+
+#about,
+#tour,
+#faq {
+    scroll-margin-top: 85px;
+}
+
+/* HERO */
+.hero-content {
+    min-width: 0;
+}
+
+.hero-image-placeholder img {
+    max-width: none;
+}
+
+/* GIỚI THIỆU */
+.intro-image,
+.intro-image-placeholder {
+    max-width: 100%;
+}
+
+.intro-image-placeholder img {
+    max-width: 100%;
+}
+
+/* THẺ THÀNH PHỐ */
+.city-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.city-card {
+    width: 100%;
+    grid-template-columns: 40% minmax(0, 60%);
+}
+
+.city-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.city-info {
+    overflow-wrap: anywhere;
+}
+
+.city-info .city-description {
+    max-width: 100%;
+}
+
+/* 7 THÀNH VIÊN */
+.members-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.members-grid .member-card:nth-child(n) {
+    grid-column: auto;
+    transform: none;
+}
+
+.member-card,
+.member-image {
+    min-width: 0;
+}
+
+.member-image img,
+.member-card img {
+    width: 100%;
+}
+
+.member-detail {
+    grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+}
+
+.member-detail-image {
+    max-width: 100%;
+}
+
+.member-detail-info {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+/* DROPDOWN HEADER */
+.notification-wrapper,
+.ticket-wrapper,
+.header-dropdown {
+    position: relative;
+}
+
+.notification-dropdown,
+.ticket-dropdown {
+    top: calc(100% + 10px);
+    width: 250px;
+    height: 220px;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+.notification-dropdown p,
+.ticket-dropdown p {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+.header-dropdown-menu.account-dropdown {
+    width: 220px;
+    max-width: calc(100vw - 24px);
+}
+
+/* FOOTER */
+.footer-container {
+    grid-template-columns:
+        minmax(0, 1.5fr)
+        repeat(2, minmax(0, 1fr))
+        minmax(0, 1.5fr)
+        minmax(0, 1.2fr);
+}
+
+.footer-logo {
+    max-width: 100%;
+}
+
+.footer-column a,
+.footer-column p,
+.footer-column > span {
+    overflow-wrap: anywhere;
+}
+
+/* ==================================================
+   TABLET — 651px ĐẾN 1024px
+================================================== */
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+
+    .header {
+        padding: 0 2.5%;
+        gap: 8px;
+    }
+
+    .logo {
+        width: 100px;
+        flex-shrink: 0;
+    }
+
+    .menu {
+        gap: 12px;
+        margin-right: 5px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .header-right {
+        gap: 4px;
+    }
+
+    .search-box {
+        width: 115px;
+        flex-shrink: 1;
+    }
+
+    .hero {
+        min-height: 380px;
+        padding: 35px 4%;
+    }
+
+    .hero-content {
+        width: 55%;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 5.5vw, 56px);
+    }
+
+    .hero-image {
+        width: 48%;
+        height: 340px;
+    }
+
+    .section {
+        padding: 42px 24px;
+    }
+
+    .intro {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .intro h2 {
+        font-size: 28px;
+    }
+
+    .city-card {
+        height: auto;
+        min-height: 180px;
+        grid-template-columns: 38% minmax(0, 62%);
+    }
+
+    .city-info {
+        padding: 14px;
+    }
+
+    .city-info h3 {
+        font-size: 18px;
+    }
+
+    .city-info p,
+    .city-info .city-description {
+        font-size: 12px;
+    }
+
+    .information {
+        width: calc(100% - 40px);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .member-image {
+        height: 190px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 28px 22px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}
+
+/* ==================================================
+   ĐIỆN THOẠI — TỐI ĐA 650px
+================================================== */
+@media screen and (max-width: 650px) {
+
+    /* HEADER */
+    .header {
+        height: auto;
+        min-height: 64px;
+        padding: 8px 4%;
+        gap: 6px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 90px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .header-right {
+        max-width: calc(100% - 100px);
+        gap: 2px;
+        margin-left: auto;
+    }
+
+    .search-box {
+        width: clamp(78px, 25vw, 120px);
+        height: 32px;
+        padding: 0 8px;
+    }
+
+    .search-box input {
+        min-width: 0;
+        font-size: 10px;
+    }
+
+    .header-icon {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+    }
+
+    .menu {
+        display: flex;
+        order: 3;
+        width: 100%;
+        margin: 0;
+        padding: 2px 0 5px;
+        gap: 4px;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: thin;
+    }
+
+    .menu a {
+        flex-shrink: 0;
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .menu a::after {
+        bottom: 1px;
+        left: 10px;
+        right: 10px;
+    }
+
+    /* Header cao hơn khi có menu dòng dưới */
+    .hero {
+        margin-top: 105px;
+        min-height: 400px;
+        padding: 35px 5%;
+    }
+
+    /* DROPDOWN */
+    .notification-dropdown,
+    .ticket-dropdown {
+        top: calc(100% + 8px);
+        right: 0;
+        width: min(250px, calc(100vw - 24px));
+        height: 180px;
+        padding: 14px;
+        border-radius: 14px;
+    }
+
+    .notification-dropdown p,
+    .ticket-dropdown p {
+        font-size: 12px;
+        line-height: 1.6;
+        white-space: normal;
+    }
+
+    .header-dropdown-menu.account-dropdown {
+        right: 0;
+        width: min(220px, calc(100vw - 24px));
+        padding: 16px;
+    }
+
+    /* HERO */
+    .hero-content {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .hero-small-title {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .hero h1 {
+        font-size: clamp(34px, 9vw, 48px);
+        line-height: 1.05;
+    }
+
+    .hero-year {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        opacity: 0.18;
+        pointer-events: none;
+    }
+
+    .hero-image-placeholder img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        object-fit: contain;
+    }
+
+    .hero-decoration {
+        left: 4%;
+        top: 12px;
+        font-size: 11px;
+    }
+
+    .hero-decoration strong {
+        font-size: 18px;
+    }
+
+    /* SECTION */
+    .section {
+        width: 100%;
+        padding: 35px 16px;
+    }
+
+    /* INTRO */
+    .intro {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .intro h2 {
+        font-size: clamp(25px, 6vw, 30px);
+    }
+
+    .intro-text > p:not(.section-label) {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .intro-image,
+    .intro-image-placeholder {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* CITY CARDS */
+    .city-card {
+        grid-template-columns: minmax(0, 1fr);
+        height: auto;
+        min-height: 0;
+    }
+
+    .city-image {
+        height: 185px;
+        min-height: 0;
+    }
+
+    .city-info {
+        padding: 15px 16px 18px;
+        gap: 4px;
+    }
+
+    .city-info h3 {
+        font-size: 19px;
+    }
+
+    .city-info p,
+    .city-info .city-description {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .city-button {
+        font-size: 12px;
+        padding: 9px 14px;
+    }
+
+    /* THÔNG TIN CHUNG */
+    .information {
+        width: calc(100% - 32px);
+        grid-template-columns: minmax(0, 1fr);
+        margin: 0 auto 24px;
+        padding: 18px 15px;
+        gap: 16px;
+    }
+
+    .information-title h3 {
+        font-size: 15px;
+    }
+
+    .information-title p,
+    .information-link {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* THÀNH VIÊN */
+    .members-section {
+        margin-top: 35px;
+    }
+
+    .members-heading h2 {
+        font-size: 26px;
+    }
+
+    .members-heading > p:last-child {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .member-image {
+        height: clamp(125px, 38vw, 180px);
+    }
+
+    .member-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .member-card h3 {
+        font-size: 15px;
+    }
+
+    /* CHI TIẾT THÀNH VIÊN */
+    .member-dropdown {
+        padding: 22px 14px;
+    }
+
+    .member-detail {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .member-detail-image {
+        width: 100%;
+        max-width: 250px;
+        height: 270px;
+        margin: 0 auto;
+    }
+
+    .member-detail-info {
+        padding-right: 0;
+    }
+
+    .member-detail-info h2 {
+        font-size: 26px;
+    }
+
+    .member-detail-info p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 30px 5% 15px;
+        margin-top: 30px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px 14px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-logo {
+        width: 100%;
+        max-width: 220px;
+        height: 75px;
+        margin: 0 auto 8px;
+        justify-content: center;
+    }
+
+    .footer-slogan {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .footer-description {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .footer-column h3 {
+        font-size: 13px;
+    }
+
+    .footer-column a,
+    .footer-column p {
+        font-size: 11px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        line-height: 1.6;
+    }
+}
+
+/* ĐIỆN THOẠI RẤT NHỎ */
+@media screen and (max-width: 380px) {
+
+    .header {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .logo {
+        width: 78px;
+    }
+
+    .header-right {
+        max-width: calc(100% - 85px);
+    }
+
+    .search-box {
+        width: 75px;
+    }
+
+    .header-icon {
+        width: 27px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .city-image {
+        height: 155px;
+    }
+
+    .members-grid {
+        gap: 8px;
+    }
+
+    .member-card h3 {
+        font-size: 14px;
+    }
+
+    .footer-container {
+        gap: 22px 10px;
+    }
+}
