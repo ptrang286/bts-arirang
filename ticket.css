@@ -1478,6 +1478,7 @@ input {
 
     .nav-link {
         font-size: 12px;
+       white-space: nowrap;
     }
 
     .search-box {
@@ -2853,5 +2854,13 @@ section[id] {
         flex: 0 0 100%;
         min-width: 0;
         scroll-snap-align: start;
+    }
+}
+
+
+/* CHỈNH CHỮ MENU TRÊN LAPTOP */
+@media (min-width: 1001px) {
+    .navbar .nav-link {
+        font-size: 12px;
     }
 }
