@@ -2615,3 +2615,37 @@ input {
         grid-column: auto;
     }
 }
+
+
+
+/* CAROUSEL TOUR - VUỐT TAY TRÊN ĐIỆN THOẠI */
+@media (max-width: 850px) {
+    .cards-window {
+        overflow-x: auto !important;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        touch-action: pan-x;
+    }
+
+    .cards-window::-webkit-scrollbar {
+        display: none;
+    }
+
+    .media-cards {
+        display: flex;
+        transform: none !important;
+        transition: none;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .media-card {
+        flex: 0 0 100%;
+        min-width: 0;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+}
