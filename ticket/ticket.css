@@ -2657,8 +2657,8 @@ input {
 /* CHỈNH HEADER TRÊN LAPTOP */
 @media (min-width: 1201px) {
     .header-container {
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 1%;
+        padding-right: 1%;
     }
 
     .logo img {
