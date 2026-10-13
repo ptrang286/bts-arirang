@@ -3350,7 +3350,7 @@ img {
 /* CHỈ DỊCH Ô VÉ SANG TRÁI TRÊN ĐIỆN THOẠI */
 @media screen and (max-width: 650px) {
     .ticket-dropdown {
-        right: 20px !important;
+        right: 40px !important;
         transform: translateX(-10px);
     }
 }
@@ -3359,7 +3359,7 @@ img {
 @media screen and (max-width: 650px) {
     .ticket-dropdown {
         right: auto !important;
-        left: -10px !important;
+        left: -25px !important;
         transform: none !important;
     }
 }
