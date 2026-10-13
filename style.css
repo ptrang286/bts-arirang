@@ -1,3 +1,4 @@
+
 /* ==================================================
    BẢNG MÀU WEB - TÍM ARIRANG
    #E8DDF5 = tím nền sáng
@@ -1381,32 +1382,26 @@ html {
 
 /* ================= CARD ================= */
 
-/* GRID 7 THÀNH VIÊN: 4 CARD TRÊN, 3 CARD DƯỚI */
 .members-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 18px;
     justify-items: center;
 }
 
-/* Hàng dưới: căn giữa 3 card */
 .members-grid .member-card:nth-child(5) {
-    grid-column: 1 / 3;
-    justify-self: end;
-    width: calc(50% - 9px);
+    grid-column: 1;
+    transform: translateX(50%);
 }
 
 .members-grid .member-card:nth-child(6) {
-    grid-column: 2 / 4;
-    justify-self: center;
-    width: calc(50% - 9px);
-    transform: none;
+    grid-column: 2;
+    transform: translateX(50%);
 }
 
 .members-grid .member-card:nth-child(7) {
-    grid-column: 3 / 5;
-    justify-self: start;
-    width: calc(50% - 9px);
+    grid-column: 3;
+    transform: translateX(50%);
 }
 
 
@@ -3360,5 +3355,3 @@ img {
         transform: translateX(-10px);
     }
 }
-
-
