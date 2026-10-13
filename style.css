@@ -3031,7 +3031,7 @@ img {
 .notification-dropdown,
 .ticket-dropdown {
     top: calc(100% + 8px);
-    right: 10px;
+    right: 30px;
     width: min(167px, calc((100vw - 24px) * 0.67));
     height: 180px;
     padding: 12px;
@@ -3345,11 +3345,4 @@ img {
 }
 
 
-@media screen and (max-width: 650px) {
-    .notification-dropdown,
-    .ticket-dropdown {
-        width: 167px !important;
-        max-width: 67vw !important;
-        box-sizing: border-box;
-    }
-}
+
