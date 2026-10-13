@@ -2564,7 +2564,7 @@ html {
     .ticket-dropdown {
         width: 260px;
         height: 250px;
-        right: 0;
+        right: 15px;
         padding: 18px;
     }
 
@@ -2584,7 +2584,7 @@ html {
         width: min(260px, calc(100vw - 30px));
         height: 180px;
         top: calc(100% + 8px);
-        right: -10px;
+        right: 15px;
         padding: 12px;
         border-radius: 14px;
     }
@@ -2604,7 +2604,7 @@ html {
     .notification-dropdown,
     .ticket-dropdown {
         width: calc(100vw - 24px);
-        right: -8px;
+        right: 10px;
         height: 160px;
         padding: 10px;
     }
@@ -3031,7 +3031,7 @@ img {
 .notification-dropdown,
 .ticket-dropdown {
     top: calc(100% + 8px);
-    right: 30px;
+    right: 15px;
     width: min(167px, calc((100vw - 24px) * 0.67));
     height: 180px;
     padding: 12px;
