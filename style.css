@@ -3343,3 +3343,13 @@ img {
         gap: 22px 10px;
     }
 }
+
+
+@media screen and (max-width: 650px) {
+    .notification-dropdown,
+    .ticket-dropdown {
+        width: 167px !important;
+        max-width: 67vw !important;
+        box-sizing: border-box;
+    }
+}
