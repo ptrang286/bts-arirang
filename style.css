@@ -3031,7 +3031,7 @@ img {
 .notification-dropdown,
 .ticket-dropdown {
     top: calc(100% + 8px);
-    right: 0;
+    right: 10px;
     width: min(167px, calc((100vw - 24px) * 0.67));
     height: 180px;
     padding: 12px;
