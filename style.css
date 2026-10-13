@@ -1435,6 +1435,7 @@ html {
 
 
 /* HÌNH THÀNH VIÊN */
+
 .member-image {
     width: 100%;
     height: 210px;
@@ -1443,11 +1444,10 @@ html {
 
 .member-card img {
     width: 100%;
-    height: 100%;
+    height: 315px; /* giữ chiều cao khung hiện tại của m */
     object-fit: cover;
     object-position: center top;
     display: block;
-    transition: transform 0.25s;
 }
 
 .member-card:hover .member-image img {
