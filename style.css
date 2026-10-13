@@ -3347,4 +3347,12 @@ img {
 }
 
 
+/* CHỈ DỊCH Ô VÉ SANG TRÁI TRÊN ĐIỆN THOẠI */
+@media screen and (max-width: 650px) {
+    .ticket-dropdown {
+        right: 35px !important;
+        transform: translateX(-10px);
+    }
+}
+
 
