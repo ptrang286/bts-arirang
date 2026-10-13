@@ -2551,12 +2551,12 @@ html {
 
 /* Ô thông báo */
 .notification-dropdown {
-    right: 15px;
+    right: 25px;
 }
 
 /* Ô vé */
 .ticket-dropdown {
-    right: 10px;
+    right: 20px;
 }
 
 
