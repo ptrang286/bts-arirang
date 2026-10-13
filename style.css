@@ -3355,12 +3355,4 @@ img {
     }
 }
 
-/* SỬA VỊ TRÍ Ô VÉ TRÊN ĐIỆN THOẠI */
-@media screen and (max-width: 650px) {
-    .ticket-dropdown {
-        right: auto !important;
-        left: -25px !important;
-        transform: none !important;
-    }
-}
 
