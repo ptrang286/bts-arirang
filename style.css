@@ -3361,36 +3361,4 @@ img {
     }
 }
 
-/* FIX CUỐI: 7 CARD CÂN ĐỀU VÀ CĂN GIỮA */
-@media screen and (min-width: 1025px) {
-    .members-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
 
-    .members-grid .member-card {
-        width: 100%;
-        transform: none;
-    }
-
-    .members-grid .member-card:nth-child(5) {
-        grid-column: 1 / 3;
-        justify-self: end;
-        width: calc(50% - 9px);
-    }
-
-    .members-grid .member-card:nth-child(6) {
-        grid-column: 2 / 4;
-        justify-self: center;
-        width: calc(50% - 9px);
-    }
-
-    .members-grid .member-card:nth-child(7) {
-        grid-column: 3 / 5;
-        justify-self: start;
-        width: calc(50% - 9px);
-    }
-
-    .member-image {
-        height: 210px;
-    }
-}
