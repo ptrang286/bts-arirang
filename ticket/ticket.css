@@ -65,14 +65,14 @@ input {
 .logo {
     display: flex;
     align-items: center;
-    margin-left: -10px;
+    margin-left: -5px;
 }
 
 .logo img {
     width: 170px;
     height: auto;
     display: block;
-    margin-left: -10px;
+    margin-left: -5px;
 }
 
 
