@@ -2139,7 +2139,7 @@ html {
     .ticket-dropdown {
         width: min(250px, 85vw);
         height: 220px;
-        right: 40px
+        right: 20px
     }
 
     /* BANNER */
@@ -3033,7 +3033,7 @@ img {
 .notification-dropdown,
 .ticket-dropdown {
     top: calc(100% + 8px);
-    right: 40px;
+    right: 20px;
     width: min(167px, calc((100vw - 24px) * 0.67));
     height: 180px;
     padding: 12px;
