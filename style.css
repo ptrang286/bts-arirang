@@ -3382,38 +3382,36 @@ img {
 
 
 
-/* CĂN GIỮA 7 THÀNH VIÊN */
-.members-grid {
-    display: flex !important;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px 18px;
-}
+/* CĂN GIỮA HÀNG 2 - GIỮ NGUYÊN KÍCH THƯỚC CARD */
+@media screen and (min-width: 1025px) {
+    .members-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        justify-items: center;
+    }
 
-/* Kích thước các thẻ bằng nhau */
-.members-grid .member-card {
-    flex: 0 0 calc((100% - 54px) / 4);
-    width: calc((100% - 54px) / 4);
-    margin: 0;
-    transform: none !important;
-}
+    /* Giữ nguyên kích thước 4 card hàng đầu */
+    .members-grid .member-card:nth-child(-n+4) {
+        grid-column: auto;
+        transform: none;
+    }
 
-/* Bỏ vị trí cũ của thành viên 5, 6, 7 */
-.members-grid .member-card:nth-child(n) {
-    grid-column: auto !important;
-    grid-row: auto !important;
-}
+    /* Căn giữa 3 card hàng dưới */
+    .members-grid .member-card:nth-child(5) {
+        grid-column: 1;
+        grid-row: 2;
+        transform: translateX(50%);
+    }
 
-/* Đảm bảo ảnh cùng kích thước */
-.members-grid .member-image {
-    width: 100%;
-    height: 210px;
-    overflow: hidden;
-}
+    .members-grid .member-card:nth-child(6) {
+        grid-column: 2;
+        grid-row: 2;
+        transform: translateX(50%);
+    }
 
-.members-grid .member-card .member-image img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-    object-position: center top;
+    .members-grid .member-card:nth-child(7) {
+        grid-column: 3;
+        grid-row: 2;
+        transform: translateX(50%);
+    }
 }
